@@ -14,3 +14,14 @@
 
 1.  Puppeteer
 2.  Cheerio
+3.  brightData
+
+## Problems
+
+1. Website block you by doing IP blocking and rate limiting, if sent too many requests
+2. Dynamic content
+3. Traditional web scralers are not able to handle dynamic content
+4. Complex navigation is not always possible
+5. IP rotation is not possible
+6. Captcha
+7. Human intrepretation while scraping
