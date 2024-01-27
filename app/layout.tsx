@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
@@ -9,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Pricewise',
+  title: 'Spider Sense',
   description: 'Track product prices effortlessly and save money on your online shopping.',
 }
 
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <main className="max-w-10xl mx-auto">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
